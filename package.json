@@ -1,0 +1,30 @@
+{
+  "name": "quicksy",
+  "version": "1.0.0",
+  "description": "Extension to save links and notes",
+  "source": "index.js",
+  "scripts": {
+    "start": "parcel watch manifest.json --host localhost --config @parcel/config-webextension",
+    "build": "parcel build manifest.json --config @parcel/config-webextension",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shreydd/quicksy.git"
+  },
+  "author": "shreyas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shreydd/quicksy/issues"
+  },
+  "homepage": "https://github.com/shreydd/quicksy#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@parcel/config-webextension": "^2.8.3",
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  }
+}

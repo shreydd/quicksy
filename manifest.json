@@ -7,18 +7,29 @@
         "48": "icons/quicksy-48.png"
     },
     "permissions": [
-        "storage", "clipboardWrite"
+        "storage",
+        "clipboardWrite"
     ],
     "browser_action": {
         "default_icon": {
             "32": "icons/quicksy-32.png"
         },
         "default_title": "Quicksy",
-        "default_popup": "popup/quicksy.html"
+        "default_popup": "index.html"
     },
     "browser_specific_settings": {
         "gecko": {
             "id": "shreyasramesh08@gmail.com"
         }
-    }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://github.com/parcel-bundler/*"
+            ],
+            "js": [
+                "index.js"
+            ]
+        }
+    ]
 }

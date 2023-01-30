@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+.input-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.mb-p-1 {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+}
+
+.input-card > button {
+    padding: 0.5rem;
+}
+
+.display-container {
+    margin: 1rem 0rem;
+}
+
+.note-card {
+    margin: 0.8rem 0rem;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note-card-content {
+    display: none;
+}
+
+.copy-btn {
+    border: none;
+    background-color: rgb(234, 88, 12);
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    color: white;
+    cursor: pointer;
+}
