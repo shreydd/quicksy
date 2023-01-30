@@ -26,10 +26,14 @@ const Note = (props) => {
     
     return(
         <div className="note-card">
-            <p className="tag">{props?.details}</p>
-            <p className="note-card-content">Content: {noteContent}</p>
-            <button className="copy-btn" onClick={() => copyHandler(noteContent)}>Copy</button>
-            <button className="delete-btn" onClick={() => deleteHandler(props?.details)}>Delete</button>
+            <div className="tag">
+                <p className="tag">{props?.details}</p>
+                <p className="note-card-content">Content: {noteContent}</p>
+            </div>
+            <div className="buttons">
+                <button className="copy-btn" onClick={() => copyHandler(noteContent)}>Copy</button>
+                <button className="delete-btn" onClick={() => deleteHandler(props?.details)}>Delete</button>
+            </div>
         </div>
     )
 }

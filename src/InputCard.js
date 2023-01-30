@@ -14,9 +14,9 @@ const clickHandler = () => {
 const InputCard = () => {
     return (
         <div className="input-card">
-            <input type="text" className="quicksy-tag mb-p-1" />
-            <textarea type="text" className="quicksy-tag-content mb-p-1" />
-            <button onClick={ () => clickHandler()}>Add</button>
+            <input type="text" className="quicksy-tag mb-p-1" placeholder="Give a tag name to remember by" />
+            <textarea type="text" placeholder="The actual content you would like to copy, ex: a link" className="quicksy-tag-content mb-p-1" />
+            <button className="add-btn" onClick={ () => clickHandler()}>Add</button>
         </div>
     )
 }

@@ -6,10 +6,14 @@ import DisplayContainer from "./src/DisplayContainer";
 const AppLayout = () => {
     return(
         <>
-            <h4>Quicksy</h4>
-            <p>Add stuff you want to copy</p>
-            <InputCard />
-            <DisplayContainer />
+            <div className="heading">
+                <h2>Quick<span>sy</span></h2>
+            </div>
+            <p className="subtext">Add things you would like to copy quickly</p>
+            <div className="app-container">
+                <InputCard />
+                <DisplayContainer />
+            </div>
         </>
     )
 }
