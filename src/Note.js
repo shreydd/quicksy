@@ -25,7 +25,7 @@ const Note = (props) => {
     }
     
     return(
-        <div className="note-card">
+        <div className="note-card flex-space-btw-align-center">
             <div className="tag">
                 <p className="tag">{props?.details}</p>
                 <p className="note-card-content">Content: {noteContent}</p>

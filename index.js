@@ -8,8 +8,8 @@ const AppLayout = () => {
         <>
             <div className="heading">
                 <h2>Quick<span>sy</span></h2>
+                <p className="subtext">Add things you would like to copy quickly</p>
             </div>
-            <p className="subtext">Add things you would like to copy quickly</p>
             <div className="app-container">
                 <InputCard />
                 <DisplayContainer />

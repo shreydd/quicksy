@@ -4,10 +4,13 @@
 
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .heading {
-    text-align: center;
+    margin: auto;
+    padding: 0rem 0.5rem;
+    /* text-align: center; */
 }
 
 .heading span {
@@ -17,11 +20,13 @@
 .heading h2 {
     margin-bottom: 0.1rem;
     line-height: 1;
+    font-weight: 400;
 }
 
 .subtext {
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 2rem;
+    margin-top: 0.5rem;
 }
 
 .app-container {
@@ -34,11 +39,26 @@
 .input-card {
     display: flex;
     flex-direction: column;
+    padding: 0.3rem;
+}
+
+/* input[type=text]:focus { */
+    /* border-bottom: 0.1px solid var(--orange-color); */
+    /* box-shadow: 0 0 5px rgb(233, 190, 131); */
+    /* color: white; */
+/* } */
+
+.input-card input {
+    /* border-radius: 0.3rem; */
+    border: none;
+    border-bottom: 1px solid #DDDDDD;
+    outline: none;
 }
 
 .mb-p-1 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     padding: 0.5rem;
+    padding-left: 0.3rem;
 }
 
 .input-card > button {
@@ -47,17 +67,22 @@
 
 .display-container {
     height: 50%;
-    width: 95%;
-    margin: 0rem auto;
+    width: 100%;
+    margin: 2rem auto;
     overflow-y: scroll;
     overflow-x: auto;
-    scrollbar-color: black;
-    scrollbar-width: thin;
+    scrollbar-width: none;
 }
 
 .note-card {
-    margin: 0.8rem 0rem;
-    /* border: 1px solid black; */
+    margin: 0.8rem 0.4rem;
+    padding: 0.5rem;
+    /* background: #f2f2f2; */
+    border-radius: 0.3rem;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+.flex-space-btw-align-center {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,7 +99,6 @@
     padding: 0.5rem 1rem;
     color: white;
     cursor: pointer;
-    margin-right: 0.3rem;
 }
 
 .copy-btn {
@@ -84,7 +108,7 @@
     padding: 0.5rem 1rem;
     color: white;
     cursor: pointer;
-    margin-right: 0.3rem;
+    margin-left: 0.3rem;
 }
 
 .delete-btn {
@@ -94,5 +118,5 @@
     cursor: pointer;
     border-radius: 0.3rem;
     padding: 0.5rem 1rem;
-    margin-right: 0.3rem;
+    margin-left: 0.3rem;
 }

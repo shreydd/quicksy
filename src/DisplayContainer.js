@@ -16,7 +16,7 @@ const DisplayContainer = () => {
 
     return (
         <>
-            <p>Your saved things</p>
+            {/* <p>Your saved things</p> */}
             <div className="display-container" >{
                 noteKey.map((item, index) => {
                     return (
