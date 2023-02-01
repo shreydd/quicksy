@@ -1,15 +1,4 @@
-import { useState } from "react";
-
 const Note = (props) => {
-
-    let [noteContent, setNoteContent] = useState([]);
-
-    let storageItems = browser.storage.local.get(props?.details);
-
-    storageItems.then((result) => {
-        let content = Object.values(result);
-        setNoteContent(content)
-    })
 
     const copyHandler = (noteContent) => {
         try {
@@ -20,19 +9,19 @@ const Note = (props) => {
         }
     }
 
-    const deleteHandler = (noteKey) => {
-        browser.storage.local.remove(noteKey);
+    const deleteHandler = (notetag) => {
+        browser.storage.local.remove(notetag);
     }
     
     return(
         <div className="note-card flex-space-btw-align-center">
             <div className="tag">
-                <p className="tag">{props?.details}</p>
-                <p className="note-card-content">Content: {noteContent}</p>
+                <p className="tag">{props?.tag}</p>
+                <p className="note-card-content">Content: {props?.val}</p>
             </div>
             <div className="buttons">
-                <button className="copy-btn" onClick={() => copyHandler(noteContent)}>Copy</button>
-                <button className="delete-btn" onClick={() => deleteHandler(props?.details)}>Delete</button>
+                <button className="copy-btn" onClick={() => copyHandler(props?.val)}>Copy</button>
+                <button className="delete-btn" onClick={() => deleteHandler(props?.tag)}>Delete</button>
             </div>
         </div>
     )
